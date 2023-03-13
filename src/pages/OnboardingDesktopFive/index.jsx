@@ -9,7 +9,7 @@ const OnboardingDesktopFivePage = () => {
   return (
     <>
       <div className="bg-gray_900 flex font-montserrat items-center justify-start mx-[auto] p-[152px] sm:px-[20px] md:px-[40px] w-[100%]">
-        <div className="bg-bluegray_900 flex flex-col items-center justify-start mx-[auto] p-[39px] md:px-[20px] rounded-[6px] shadow-bs md:w-[100%] w-[58%]">
+        <div className="bg-bluegray_900 flex flex-col items-center justify-start mx-[auto] p-[39px] md:px-[20px] rounded-[6px] shadow-bs md:w-[100%] w-[65%]">
           <div className="flex flex-col gap-[16px] items-center justify-start mt-[9px] sm:w-[100%] w-[570px]">
             <Text
               className="text-bluegray_100 text-center w-[auto]"
@@ -37,7 +37,7 @@ const OnboardingDesktopFivePage = () => {
               Allow
             </Button>
           </div>
-          <div className="flex flex-col gap-[32px] items-center justify-start mb-[9px] mt-[97px] sm:w-[100%] w-[570px]">
+          <div className="flex flex-col gap-[32px] items-center justify-start mb-[9px] mt-[97px] w-[100%]">
             <div className="flex flex-row sm:gap-[40px] items-center justify-between w-[100%]">
               <div className="flex items-center justify-center sm:px-[20px] px-[22px] py-[10px] self-stretch w-[auto]">
                 <Text

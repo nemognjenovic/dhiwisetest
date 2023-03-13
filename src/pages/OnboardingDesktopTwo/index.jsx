@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Text, Img, Button } from "components";
+import Progressbar from "components/Progressbar";
 import { useNavigate } from "react-router-dom";
 
 const OnboardingDesktopTwoPage = () => {
@@ -9,7 +10,7 @@ const OnboardingDesktopTwoPage = () => {
   return (
     <>
       <div className="bg-gray_900 flex font-montserrat items-center justify-start mx-[auto] p-[152px] sm:px-[20px] md:px-[40px] w-[100%]">
-        <div className="bg-bluegray_900 flex flex-col items-center justify-start mx-[auto] p-[39px] md:px-[20px] rounded-[6px] shadow-bs md:w-[100%] w-[58%]">
+        <div className="bg-bluegray_900 flex flex-col items-center justify-start mx-[auto] p-[39px] md:px-[20px] rounded-[6px] shadow-bs md:w-[100%] w-[65%]">
           <div className="flex flex-col gap-[16px] items-center justify-start mt-[9px] sm:w-[100%] w-[570px]">
             <Text
               className="md:max-w-[100%] max-w-[570px] text-bluegray_100 text-center"
@@ -27,7 +28,7 @@ const OnboardingDesktopTwoPage = () => {
               both for an optimized remote experience.
             </Text>
           </div>
-          <div className="flex flex-col gap-[16px] items-start justify-start mt-[58px] self-stretch sm:w-[100%] w-[auto]">
+          <div className="flex flex-col gap-[16px] items-center justify-start mt-[58px] mx-[auto] self-stretch sm:w-[100%] w-[auto]">
             <div className="bg-deep_purple_A200_1e border-[1px] border-deep_purple_A200 border-solid flex sm:flex-col flex-row gap-[29px] items-center justify-start pl-[36px] pr-[40px] sm:px-[20px] py-[20px] rounded-[6px] sm:w-[100%] w-[570px]">
               <Img
                 src="images/img_trash.svg"
@@ -109,13 +110,7 @@ const OnboardingDesktopTwoPage = () => {
                 </Button>
               </div>
             </div>
-            <div className="h-[12px] overflow-hidden relative w-[100%]">
-              <div className="w-full h-full absolute bg-deep_purple_A200_1e rounded-[6px]"></div>
-              <div
-                className="h-full absolute bg-deep_purple_A200  rounded-[6px]"
-                style={{ width: "40%" }}
-              ></div>
-            </div>
+            <Progressbar className="h-[12px] overflow-hidden relative w-[100%]" />
           </div>
         </div>
       </div>
